@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sherlock | Search</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  
+  <body>
+    <div id="menu">
+      <a href="index.html">Search</a>
+      <a href="edit.html">Create/Edit</a>
+      <a href="delete.html">Delete</a>
+      <a href="help.html">Help</a>
+      <a href="changelog.html">Changelog</a>
+    </div>
+    <br>
+    
+    <div>
+      <br><br><br><a href="search.html"><img src="logo.png" alt="Logo" style="width: 450px;"></a><br><br>
+      <input type="number" id="fetchID"><br><br>
+      <button onclick="show()">Search</button>
+      <button onclick="location.reload()">Refresh</button>
+      <div id="dataDisplay" style="word-wrap: break-word; font-size: 18px;"></div>
+    </div>
+  </body>
+</html>

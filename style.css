@@ -1,0 +1,76 @@
+body {
+  font-family: "Roboto Light", "Avenir", sans-serif;
+  color: #555;
+  background-color: #fff;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+}
+
+div {
+  margin: 0 auto;
+}
+
+button {
+  width: 100px;
+  background-color: #ddd;
+  color: #555;
+  font-family: "Roboto Light", "Avenir", sans-serif;
+  font-size: 18px;
+  padding: 9px;
+  border: none;
+  border-radius: 1px;
+}
+
+input {
+  width: 500px;
+  background-color: #fff;
+  color: #333;
+  font-family: "Roboto Light", "Avenir", sans-serif;
+  box-shadow: 0px 1px 3px #ccc;
+  font-size: 18px;
+  padding: 9px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 1px;
+}
+
+select, #entryPerson {
+  width: 520px;
+  background-color: #fff;
+  color: #333;
+  font-family: "Roboto Light", "Avenir", sans-serif;
+  box-shadow: 0px 1px 3px #ccc;
+  font-size: 18px;
+  padding: 9px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  border-radius: 1px;
+}
+
+#entryDay, #entryMonth, #entryYear {
+  width: 150px;
+}
+
+#entryID, #entryName, #entryEmail {
+  width: 500px;
+}
+
+#menu {
+  text-align: right;
+  padding: 8px 30px;
+}
+
+a:link, a:visited {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #777;
+    text-decoration: bold;
+}
