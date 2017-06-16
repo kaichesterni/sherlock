@@ -50,6 +50,7 @@ select, #entryPerson {
   border-width: 1px;
   border-color: #ccc;
   border-radius: 1px;
+  -webkit-appearance: none;
 }
 
 #entryDay, #entryMonth, #entryYear {
