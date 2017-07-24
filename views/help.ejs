@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include partials/_meta.ejs %>
+</head>
+
+<body>
+  <% include partials/_nav.ejs %>
+  <br>
+
+  <div>
+    <% include partials/_logo.ejs %>
+    <p><i>A simple database that stores profiles. Requires localStorage support</i></p>
+
+    <button id="checkLS" onclick="checkLS()" style="width: 400px;">Check for localStorage support</button><br><br>
+
+    <button onclick="clearLS()" style="width: 400px">Clear all localStorage data</button>
+    <p><i>Clearing all data may affect other websites using localStorage</i></p>
+  </div>
+</body>
+
+</html>

@@ -12,7 +12,7 @@ function clearLS() {
 }
 
 function convert(value) {
-  if (value !== undefined && value !== null) {
+  if (value) {
     return value;
   } else {
     return "[no data]";
@@ -74,6 +74,7 @@ function convertPerson(value) {
       out = "NONE - No personality selected or just no personality";
       break;
   }
+  
   return out;
 }
 
@@ -82,7 +83,7 @@ function show() {
   var output = "<br>No data has been found for this ID";
   var tempArr = [];
   
-  if (localStorage[ID] !== undefined && localStorage[ID] !== "erased") {
+  if (localStorage[ID] && localStorage[ID] !== "erased") {
     tempArr = JSON.parse(localStorage[ID]);
     output = "<br>Name: " + convert(tempArr[0]) + "<br><br>Birthday: " + convert(tempArr[1]) + "/" + convert(tempArr[2]) + "/" + convert(tempArr[3]) + "<br><br>Email: " + convert(tempArr[4]) + "<br><br>Education: " + convert(tempArr[5]) + "<br><br>Occupation: " + convert(tempArr[6]) + "<br><br>Personality: " + convertPerson(tempArr[7]) + "<br><br>Superpower: " + convert(tempArr[8]);
   }
@@ -93,12 +94,12 @@ function show() {
 function remove() {
   var ID = parseFloat(document.getElementById("removeID").value);
   
-  if (localStorage[ID] === undefined || localStorage[ID] === "erased") {
+  if (!localStorage[ID] || localStorage[ID] === "erased") {
     alert("Error: no data stored with this ID has been found.");
     return;
   }
   
-  if (localStorage[ID] !== undefined && localStorage[ID] !== "erased" && confirm("There is data stored with this ID. Are you sure you would like to delete it?") === false) {
+  if (localStorage[ID] && localStorage[ID] !== "erased" && !confirm("There is data stored with this ID. Are you sure you would like to delete it?")) {
     return;
   }
   

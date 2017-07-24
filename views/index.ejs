@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <% include partials/_meta.ejs %>
+</head>
+
+<body>
+  <% include partials/_nav.ejs %>
+  <br>
+
+  <div>
+    <% include partials/_logo.ejs %>
+    <input type="number" id="fetchID"><br><br>
+    <button onclick="show()">Search</button>
+    <button onclick="location.reload()">Refresh</button>
+    <div id="dataDisplay" style="word-wrap: break-word; font-size: 18px;"></div>
+  </div>
+</body>
+
+</html>

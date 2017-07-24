@@ -61,17 +61,17 @@ select, #entryPerson {
   width: 500px;
 }
 
-#menu {
+.nav {
   text-align: right;
   padding: 8px 30px;
 }
 
 a:link, a:visited {
-    color: #333;
-    text-decoration: none;
+  color: #333;
+  text-decoration: none;
 }
 
 a:hover, a:active {
-    color: #777;
-    text-decoration: bold;
+  color: #777;
+  text-decoration: bold;
 }

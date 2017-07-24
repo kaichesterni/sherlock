@@ -1,34 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sherlock | Create/Edit</title>
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico">
-  </head>
-  
-  <body>
-    <div id="menu">
-      <a href="index.html">Search</a>
-      <a href="edit.html">Create/Edit</a>
-      <a href="delete.html">Delete</a>
-      <a href="help.html">Help</a>
-      <a href="changelog.html">Changelog</a>
-    </div>
-    <br>
-    
-    <div>
-      <br><br><br><a href="search.html"><img src="logo.png" alt="Logo" style="width: 450px;"></a><br><br>
-      
-      <input type="number" id="entryID" placeholder="ID"><br><br>
-      <input id="entryName" type="text" placeholder="Name"><br><br>
-      <input id="entryDay" type="number" placeholder="DD">
-      <input id="entryMonth" type="number" placeholder="MM">
-      <input id="entryYear" type="number" placeholder="YYYY"><br><br>
-      <input id="entryEmail" type="text" placeholder="Email"><br><br>
-      <input id="entryEdu" type="text" placeholder="Education"><br><br>
-      <input id="entryJob" type="text" placeholder="Occupation"><br><br>
-      <select id="entryPerson">
+
+<head>
+  <% include partials/_meta.ejs %>
+</head>
+
+<body>
+  <% include partials/_nav.ejs %>
+  <br>
+
+  <div>
+    <% include partials/_logo.ejs %>
+
+    <input type="number" id="entryID" placeholder="ID"><br><br>
+    <input id="entryName" type="text" placeholder="Name"><br><br>
+    <input id="entryDay" type="number" placeholder="DD">
+    <input id="entryMonth" type="number" placeholder="MM">
+    <input id="entryYear" type="number" placeholder="YYYY"><br><br>
+    <input id="entryEmail" type="text" placeholder="Email"><br><br>
+    <input id="entryEdu" type="text" placeholder="Education"><br><br>
+    <input id="entryJob" type="text" placeholder="Occupation"><br><br>
+    <select id="entryPerson">
         <option value="NONE">Personality</option>
         <option value="ISTJ">ISTJ - The Duty Fullfiller: Serious and quiet, interested in security and peaceful living</option>
         <option value="ISTP">ISTP - The Mechanic: Quiet and reserved, interested in how things work and why</option>
@@ -47,10 +39,11 @@
         <option value="ENTP">ENTP - The Visionary: Creative, resourceful, and intellectually quick. Good at a broad range of things. Enjoys debating issues</option>
         <option value="ENTJ">ENTJ - The Executive: Assertive and outspoken, driven to lead. Excellent ability to solve organizational problems</option>
       </select><br><br>
-      <input id="entrySuperpower" type="text" placeholder="Superpower"><br><br>
-      
-      <button onclick="save()">Save</button>
-      <button onclick="location.reload()">Refresh</button>
-    </div>
-  </body>
+    <input id="entrySuperpower" type="text" placeholder="Superpower"><br><br>
+
+    <button onclick="save()">Save</button>
+    <button onclick="location.reload()">Refresh</button>
+  </div>
+</body>
+
 </html>
